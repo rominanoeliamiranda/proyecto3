@@ -1,0 +1,25 @@
+Algoritmo CalculadoraDeCompra
+    Definir producto Como Caracter
+	Definir  total, precio , cantidad Como Real
+    Definir cantidadProductos Como Entero
+    total <- 0  // Inicializamos el total en 0
+	
+    Escribir "Bienvenido a la Calculadora de Compra"
+    
+    Escribir "Ingrese la cantidad de productos a comprar:"
+    Leer cantidadProductos
+	
+    Para i <- 1 Hasta cantidadProductos Hacer
+        Escribir "Producto ", i, ":"
+        Leer producto
+        Escribir "Precio de ", producto, ":"
+        Leer precio
+        Escribir "Cantidad de ", producto, ":"
+        Leer cantidad
+        total <- total + (precio * cantidad)
+    Fin Para
+	
+    Escribir "Total a pagar:", total
+    Escribir "Gracias por su compra"
+FinAlgoritmo
+
